@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashvin Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            < !-- Universal selector esse pura elememt pe apply hota hai-->padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: blue;
+            color: white;
+            font-family: poppins, sans-serif;
+        }
+
+        nav {
+            /* Wo automatically ek line (row) me arrange ho jaate hain*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(5, 5, 87);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            /* List style none se list me jo style hota hai wo remove ho jata hai*/
+            margin: 23px;
+            /* dono word ke bich space ke liye*/
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .left {
+            font-size: 1.5rem;
+            /*Browser me default root font-size 16 hota hai: rem usko utna se multiply karta hai*/
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 30px 0;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purpul {
+            color: rgb(138, 110, 165);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Ashvin Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Concact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hii My name is <span class="purpul">Ashvin</span>
+                <div>And I am a fresher</div>
+                <div>Web developer</div>
+            </div>
+            <div class="rightsection">
+                <img src="A.png">
+            </div>
+
+
+
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"><script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['developer' & amp; video editor],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
